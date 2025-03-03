@@ -19,7 +19,7 @@ nav{
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border: 2px solid rgb(199, 199, 199);
-  
+    z-index: 10;
   }
   
   .logo {
@@ -45,6 +45,8 @@ nav{
   .menu-list{
     display: flex; /* GPT */
     align-items: center; /* GPT */
+    z-index: 10; 
+
   }
   
   nav ul li{
@@ -54,12 +56,6 @@ nav{
   
   }
   
-  nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-  
-  }
   
   nav ul li a{
     color: black;
@@ -86,6 +82,7 @@ nav{
     cursor: pointer;
     display: none; /* GPT */
     right: 20px; /* GPT */
+    z-index: 1100; /* Поднять поверх hero */
   }
   
   #check{
@@ -142,7 +139,7 @@ nav{
    }
    #check:checked ~ .menu-list {
     right: 0;
-  
+  }
   }
  
 
@@ -245,7 +242,7 @@ section{
     }
 
     .hero h1 {
-        font-size: 60px;  /* Smaller font size for mobile */
+        font-size: 40px;  /* Smaller font size for mobile */
     }
 
     .hero p {
@@ -259,7 +256,6 @@ section{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 padding: 20px;
 padding-top: 40px;
-
 }
 
 
@@ -333,5 +329,52 @@ select {
         width: 90%; /* Make it more compact on small screens */
         padding: 20px 10px; /* Reduce padding */
     }
+}
+
+.filter-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.filter-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+}
+
+button {
+    background: #2C2E83;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button i {
+    font-size: 18px;
 }
 
