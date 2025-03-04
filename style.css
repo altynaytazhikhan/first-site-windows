@@ -16,7 +16,7 @@ html, body {
 
 
 nav{
-    background: white;
+    background: red;
     height: 60px;
     width: 95%;
     display: flex; /*GPT*/
