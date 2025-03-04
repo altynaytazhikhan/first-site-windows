@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
 nav{
     background: white;
     height: 60px;
